@@ -1,16 +1,50 @@
+import { useState } from "react";
+
 function Nav() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav>
-      <a href="#" className="logo">
+      <a href="#home" className="logo">
         DEV<span>PROFILE</span>
       </a>
 
-      <div className="navlinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <div className={`navlinks ${menuOpen ? "active" : ""}`}>
+        <a href="#home" onClick={closeMenu}>
+          Home
+        </a>
+
+        <a href="#about" onClick={closeMenu}>
+          About
+        </a>
+
+        <a href="#skill" onClick={closeMenu}>
+          Skills
+        </a>
+
+        <a href="#projects" onClick={closeMenu}>
+          Projects
+        </a>
+
+        <a href="#contact" onClick={closeMenu}>
+          Contact
+        </a>
       </div>
+
+      <button
+        className={`menu-toggle ${menuOpen ? "active" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation menu"
+        aria-expanded={menuOpen}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   );
 }
