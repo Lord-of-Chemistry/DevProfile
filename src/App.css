@@ -24,6 +24,10 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  padding-top: 90px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   background: var(--bg-primary);
@@ -39,7 +43,6 @@ nav {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-
   position: fixed;
   top: 0;
   left: 50%;
@@ -119,9 +122,7 @@ nav {
 .wittysage {
   display: block;
   color: transparent;
-
   -webkit-text-stroke: 2px var(--accent);
-
   transition: color 0.3s ease;
 }
 
@@ -139,10 +140,6 @@ nav {
   line-height: 1.8;
 }
 
-/* =========================
-   BUTTONS
-========================= */
-
 .homebuttons {
   display: flex;
   gap: 16px;
@@ -153,19 +150,14 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-
   padding: 14px 22px;
-
   border: 1px solid var(--accent);
   border-radius: 6px;
-
   color: var(--text-primary);
-
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -188,33 +180,23 @@ nav {
   transform: translate(3px, -3px);
 }
 
-/* =========================
-   HERO DECORATION
-========================= */
-
 .hero-decoration {
   width: 260px;
   height: 260px;
-
   border: 1px solid var(--border);
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: relative;
 }
 
 .hero-decoration::before,
 .hero-decoration::after {
   content: "";
-
   position: absolute;
-
   width: 100%;
   height: 100%;
-
   border: 1px solid var(--border);
   border-radius: 50%;
 }
@@ -234,10 +216,6 @@ nav {
   z-index: 1;
 }
 
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 768px) {
   nav {
     padding: 24px;
@@ -253,7 +231,7 @@ nav {
   }
 
   .home {
-    padding: 60px 24px;
+    padding: 120px 24px 60px;
     min-height: calc(100vh - 80px);
     display: block;
   }
@@ -287,10 +265,8 @@ nav {
   font-size: clamp(3rem, 8vw, 5rem);
   letter-spacing: -3px;
   color: var(--text-primary);
-
   margin-bottom: 4rem;
   padding-bottom: 1rem;
-
   border-bottom: 1px solid var(--border);
 }
 
@@ -300,13 +276,8 @@ nav {
   gap: 6rem;
 }
 
-/* =========================
-   ABOUT IMAGE
-========================= */
-
 .about-left {
   flex: 1;
-
   display: flex;
   justify-content: center;
 }
@@ -314,16 +285,10 @@ nav {
 .about-left img {
   width: 100%;
   max-width: 350px;
-
   border-radius: 20px;
   border: 1px solid var(--border);
-
   box-shadow: 0 0 60px rgba(34, 211, 238, 0.08);
 }
-
-/* =========================
-   ABOUT TEXT
-========================= */
 
 .about-right {
   flex: 1;
@@ -331,10 +296,8 @@ nav {
 
 .about-right p {
   color: var(--text-secondary);
-
-  font-size: 1.05rem;
+ font-size: 1.05rem;
   line-height: 1.8;
-
   margin-bottom: 1.5rem;
 }
 
@@ -342,10 +305,6 @@ nav {
   color: var(--accent);
   font-weight: 700;
 }
-
-/* =========================
-   SKILL BUTTONS
-========================= */
 
 .skills {
   margin-top: 2rem;
@@ -355,20 +314,14 @@ nav {
   font-size: 0.85rem;
   font-family: inherit;
   font-weight: 600;
-
   padding: 0.7rem 1.2rem;
-
   border: 1px solid var(--border);
   border-radius: 6px;
-
   background: var(--card);
   color: var(--text-primary);
-
   cursor: pointer;
-
   margin-right: 0.75rem;
   margin-top: 0.5rem;
-
   transition:
     border-color 0.2s ease,
     color 0.2s ease,
@@ -378,13 +331,8 @@ nav {
 .btn:hover {
   border-color: var(--accent);
   color: var(--accent);
-
   transform: translateY(-2px);
 }
-
-/* =========================
-   ABOUT MOBILE
-========================= */
 
 @media (max-width: 768px) {
   .about {
