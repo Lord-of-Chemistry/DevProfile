@@ -23,7 +23,7 @@ function About() {
 
           <p>Currently exploring...</p>
 
-          <div className="skills">
+          <div className="about-button">
             <button className="btn">ReactJS</button>
             <button className="btn">UI/UX Design</button>
           </div>
