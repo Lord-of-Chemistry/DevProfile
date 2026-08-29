@@ -75,10 +75,6 @@ nav {
   color: var(--accent);
 }
 
-/* =========================
-   HERO / HOME
-=========================
-
 
 .home {
   min-height: calc(100vh - 90px);
