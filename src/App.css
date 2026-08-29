@@ -39,13 +39,25 @@ nav {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+
   position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1000;
+
   padding: 28px 40px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(15, 23, 42, 0.8);
-  background-image: blur(10px);
+
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(51, 65, 85, 0.4);
 }
 
 .logo {
@@ -75,19 +87,20 @@ nav {
   color: var(--accent);
 }
 
-
 .home {
   min-height: calc(100vh - 90px);
   max-width: 1200px;
   margin: 0 auto;
-
   padding: 80px 40px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: relative;
+  background: radial-gradient(
+    circle at 80% 50%,
+    rgba(34, 211, 238, 0.06),
+    transparent 30%
+  );
 }
 
 .home-content {
