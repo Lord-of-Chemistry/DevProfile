@@ -1,7 +1,8 @@
 import "./App.css";
 import Nav from "./Nav.jsx";
 import Home from "./Home.jsx";
-import About from "./About.jsx"
+import About from "./About.jsx";
+import Skill from "./Skill.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       <Home />
       <About />
+      <Skill />
     </main>
   );
 }
