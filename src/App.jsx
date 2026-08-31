@@ -3,7 +3,8 @@ import Nav from "./Nav.jsx";
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Skill from "./Skill.jsx";
-import Projects from "./Projects.jsx"
+import Projects from "./Projects.jsx";
+import Contact from "./Contact.jsx";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skill />
       <Projects />
+      <Contact />
     </main>
   );
 }
