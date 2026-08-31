@@ -2,6 +2,7 @@ import "./App.css";
 import ProjectCard from "./ProjectCard";
 import image from "./image.png";
 import cieimg from "./cie-img.png";
+import gourmet from "./gourmet.png";
 
 function Projects() {
   return (
@@ -17,7 +18,7 @@ function Projects() {
           title="DevProfile"
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
           tech=" React • Vite • CSS"
-          live="#"
+          live="https://devprofile-eight.vercel.app/"
         />
 
         <ProjectCard
@@ -29,10 +30,11 @@ function Projects() {
         />
 
         <ProjectCard
-          image={image}
+          image={gourmet}
           title="DevProfile"
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
           tech=" React • Vite • CSS"
+          live="https://gourmet-haven-xi.vercel.app/"
         />
       </div>
     </section>
