@@ -1,4 +1,4 @@
-import "./App.css"
+import "./App.css";
 import avatar from "./avatar.png";
 
 function About() {
@@ -17,8 +17,9 @@ function About() {
           </p>
 
           <p>
-            I'm a passionate web developer with a keen eye for design and a
-            love for creating engaging user experiences.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus et
+            quibusdam inventore, sunt eligendi sed possimus ratione qui iure
+            optio at praesentium enim nemo vero provident.
           </p>
 
           <p>Currently exploring...</p>
@@ -34,4 +35,3 @@ function About() {
 }
 
 export default About;
-

@@ -5,10 +5,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-logo">
-          DEV<span>PROFILE</span>
+          WITTY<span>SAGE</span>
         </div>
 
-        <p>Built with React & curiosity.</p>
+        <p>Built with love.</p>
 
         <div className="footer-links">
           <a href="#home">Home</a>

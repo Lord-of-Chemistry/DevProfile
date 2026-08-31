@@ -10,7 +10,7 @@ function Nav() {
   return (
     <nav>
       <a href="#home" className="logo">
-        DEV<span>PROFILE</span>
+        WITTY<span>SAGE</span>
       </a>
 
       <div className={`navlinks ${menuOpen ? "active" : ""}`}>
