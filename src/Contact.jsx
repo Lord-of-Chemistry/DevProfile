@@ -15,7 +15,7 @@ function Contact() {
             opportunities to learn and build something meaningful.
           </p>
           <a className="contact-email" href="mailto:your@email.com">
-            your@email.com
+            my@email.com
           </a>
         </div>
 
