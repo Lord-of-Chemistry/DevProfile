@@ -3,6 +3,7 @@ import Nav from "./Nav.jsx";
 import Home from "./Home.jsx";
 import About from "./About.jsx";
 import Skill from "./Skill.jsx";
+import Projects from "./Projects.jsx"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Home />
       <About />
       <Skill />
+      <Projects />
     </main>
   );
 }

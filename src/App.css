@@ -52,8 +52,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   background: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(51, 65, 85, 0.4);
 }
 
@@ -413,6 +413,124 @@ nav {
   line-height: 1.5;
 }
 
+.projects {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 40px;
+}
+
+.projects h1 {
+  font-size: clamp(3rem, 8vw, 5rem);
+  letter-spacing: -3px;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-intro {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.project-grid {
+  width: 100%;
+  min-width: 0;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 15px 50px rgba(34, 211, 238, 0.08);
+}
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 1899 / 874;
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.04);
+}
+
+.project-info {
+  padding: 2rem;
+}
+
+.project-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-info p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.project-links a {
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 20px 24px;
@@ -432,8 +550,8 @@ nav {
     flex-direction: column;
     gap: 0;
     background: rgba(15, 23, 42, 0.92);
-    backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
     border: 1px solid var(--border);
     border-radius: 12px;
     opacity: 0;
@@ -532,5 +650,20 @@ nav {
 
   .skill-card {
     min-height: 190px;
+  }
+
+  .projects {
+    padding: 80px 24px;
+    width: 100%;
+  }
+
+  .projects h1 {
+    font-size: clamp(3rem, 15vw, 5rem);
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
   }
 }

@@ -2,7 +2,7 @@ import "./App.css"
 
 function ProjectCard({ image, title, description, tech, live, github }) {
     return (
-        <article className="ProjectCard">
+        <article className="project-card">
             <div className="project-image">
                 <img src={image} alt={`${title} preview`} />
             </div>
