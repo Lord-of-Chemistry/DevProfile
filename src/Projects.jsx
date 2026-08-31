@@ -1,6 +1,7 @@
 import "./App.css";
 import ProjectCard from "./ProjectCard";
-import image from "./image.png"
+import image from "./image.png";
+import cieimg from "./cie-img.png";
 
 function Projects() {
   return (
@@ -16,13 +17,15 @@ function Projects() {
           title="DevProfile"
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
           tech=" React • Vite • CSS"
+          live="#"
         />
 
         <ProjectCard
-          image={image}
-          title="DevProfile"
+          image={cieimg}
+          title="Cie Cie Essence"
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          tech=" React • Vite • CSS"
+          tech="HTML • JS • CSS"
+          live="https://cie-cie-essence.vercel.app/"
         />
 
         <ProjectCard
