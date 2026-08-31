@@ -453,15 +453,17 @@ nav {
   border: 1px solid var(--border);
   border-radius: 14px;
   transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: var(--accent);
-  box-shadow: 0 15px 50px rgba(34, 211, 238, 0.08);
+  border-color: var(--project-theme);
+  background: color-mix(in srgb, var(--project-theme) 8%, var(--card));
+  box-shadow: 0 15px 50px
+    color-mix(in srgb, var(--project-theme) 12%, transparent);
 }
 
 .project-image {
@@ -486,6 +488,18 @@ nav {
 
 .project-card:hover .project-image img {
   transform: scale(1.04);
+}
+
+.project-card:hover .project-info h2 {
+  color: var(--project-theme);
+}
+
+.project-card:hover .project-tech {
+  color: var(--project-theme);
+}
+
+.project-card:hover .project-links a {
+  color: var(--project-theme);
 }
 
 .project-info {

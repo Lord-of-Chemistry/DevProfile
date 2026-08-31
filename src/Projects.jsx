@@ -19,6 +19,7 @@ function Projects() {
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
           tech=" React • Vite • CSS"
           live="https://devprofile-eight.vercel.app/"
+          theme="#22d3ee"
         />
 
         <ProjectCard
@@ -27,6 +28,7 @@ function Projects() {
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
           tech="HTML • JS • CSS"
           live="https://cie-cie-essence.vercel.app/"
+          theme="#ec4899"
         />
 
         <ProjectCard
@@ -35,6 +37,7 @@ function Projects() {
           description="lorem ipsum dolor sit amet, consectetur adipiscing elit."
           tech=" React • Vite • CSS"
           live="https://gourmet-haven-xi.vercel.app/"
+          theme="rgba(254, 137, 54, 0.76)"
         />
       </div>
     </section>
